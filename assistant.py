@@ -70,7 +70,7 @@ while True:
         speak(f"{text[0]} + {text[-1]} = {text[0] + text[-1]}")
 
     elif "-" in text:
-	text = text.split()
+        text = text.split()
         speak(f"{text[0]} - {text[-1]} = {text[0] - text[-1]}")
 
     elif "*" in text:
