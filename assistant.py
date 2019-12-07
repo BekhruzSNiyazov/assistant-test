@@ -45,7 +45,7 @@ while True:
     text = get_audio()
         
     if "goodbye" in text:
-    	    speak("Goodbye to you to! Say stop to stop.")
+    	speak("Goodbye to you to! Say stop to stop.")
 
     elif "stop" in text:
         break
@@ -61,7 +61,6 @@ while True:
     elif "how are you" in text:
         speak("I'm fine, thank you!")
 
-
     elif "random number generator" in text:
         i = randrange(100)
         speak(i)
@@ -71,8 +70,8 @@ while True:
         speak(f"{text[0]} + {text[-1]} = {text[0] + text[-1]}")
 
     elif "-" in text:
-	    text = text.split()
-	    speak(f"{text[0]} - {text[-1]} = {text[0] - text[-1]}")
+	text = text.split()
+        speak(f"{text[0]} - {text[-1]} = {text[0] - text[-1]}")
 
     elif "*" in text:
         text = text.split()
